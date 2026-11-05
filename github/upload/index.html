@@ -1,23 +1,41 @@
-<!doctype html><html lang="ru" data-theme="auto"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Загрузка проекта — GitStart</title><meta name="description" content="Типовой сценарий публикации существующего локального проекта в GitHub.">
-<meta name="theme-color" content="#111318"><meta property="og:title" content="Загрузка проекта — GitStart"><meta property="og:description" content="Типовой сценарий публикации существующего локального проекта в GitHub."><meta property="og:type" content="website">
-<link rel="canonical" href="https://USERNAME.github.io/gitstart/github/upload/"><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../../assets/styles.css"></head>
-<body data-root="../../"><header class="site-header"><div class="container header-inner">
-      <a class="brand" href="../../index.html" aria-label="GitStart — главная"><span class="brand-mark" aria-hidden="true">⎇</span><span>GitStart</span></a>
-      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
-      <nav class="main-nav" aria-label="Основная навигация"><a href="../../start/">Старт</a><a href="../../basics/">Основы</a><a href="../../branches/">Ветки</a><a href="../../remotes/">Remote</a><a href="../../github/">GitHub</a><a href="../../commands/">Команды</a><a href="../../cheatsheet/">Шпаргалка</a></nav>
-      <div class="header-actions"><button class="icon-btn" data-search-open aria-label="Поиск">⌕</button><button class="icon-btn" data-theme-toggle aria-label="Сменить тему">◐</button></div>
-    </div></header><dialog class="search-dialog" id="site-search"><div class="search-box">
-      <div class="search-top"><input id="search-input" type="search" placeholder="Найти команду или тему…" autocomplete="off"><button class="icon-btn" data-search-close aria-label="Закрыть">×</button></div>
-      <div id="search-results" class="search-results"><p class="muted">Например: commit, ветки, push, первый репозиторий</p></div>
-    </div></dialog>
-<main><div class="container"><nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="../../index.html">Главная</a><span aria-hidden="true">/</span><a href="../../github/">GitHub</a><span aria-hidden="true">/</span><span>Загрузка проекта</span></nav></div><section class="article-hero"><div class="container narrow"><span class="eyebrow">GitHub</span><h1>Загрузка проекта</h1><p class="lead">Типовой сценарий публикации существующего локального проекта в GitHub.</p></div></section>
-<section class="article-section"><div class="container article-layout"><article class="article-content">
-<p>Типовой сценарий публикации существующего локального проекта в GitHub.</p><section class="content-card"><h2>Зачем это нужно</h2><p>Типовой сценарий публикации существующего локального проекта в GitHub.</p></section><section class="content-card"><h2>GitHub и Git</h2><p>Локальные операции Git работают независимо от GitHub. GitHub нужен для удалённого хранения, совместной работы и публикации репозиториев.</p></section><div class="code-wrap"><div class="code-head"><span>Подготовить изменения</span><button class="copy-btn" type="button">Копировать</button></div><pre><code>git add .</code></pre></div><div class="code-wrap"><div class="code-head"><span>Создать коммит</span><button class="copy-btn" type="button">Копировать</button></div><pre><code>git commit -m &quot;Initial commit&quot;</code></pre></div><div class="code-wrap"><div class="code-head"><span>Опубликовать проект</span><button class="copy-btn" type="button">Копировать</button></div><pre><code>git push -u origin main</code></pre></div><div class="callout"><strong>Совет:</strong> перед потенциально опасной командой выполните <code>git status</code> и убедитесь, что понимаете текущее состояние репозитория.</div>
-</article><aside class="article-aside"><div class="aside-card"><span class="aside-kicker">Дальше</span><a href="../../cheatsheet/">Открыть шпаргалку →</a><a href="../../commands/">Справочник команд →</a></div></aside></div></section></main><footer class="site-footer"><div class="container footer-grid">
-      <div><a class="brand footer-brand" href="../../index.html"><span class="brand-mark">⎇</span><span>GitStart</span></a><p>Учебный справочник по Git для начинающих.</p></div>
-      <div><h3>Разделы</h3><a href="../../start/">Начало работы</a><a href="../../commands/">Команды</a><a href="../../errors/">Частые ошибки</a></div>
-      <div><h3>Проект</h3><a href="../../about/">О проекте</a><a href="../../contacts/">Контакты</a><a href="../../sitemap.html">Карта сайта</a></div>
-    </div><div class="container footer-bottom"><span>© 2026 GitStart</span><span>Сделано для изучения Git</span></div></footer>
-<script src="../../assets/app.js" defer></script></body></html>
+<!doctype html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Как загрузить проект на GitHub | GitStart</title>
+<meta name="description" content="Проверьте состав коммита, подключите свой репозиторий и отправьте локальную ветку main на GitHub.">
+
+<link rel="canonical" href="https://geterlex.github.io/github/upload/">
+<meta property="og:url" content="https://geterlex.github.io/github/upload/">
+<meta name="theme-color" content="#11141c">
+<meta property="og:site_name" content="GitStart">
+<meta property="og:title" content="Как загрузить проект на GitHub | GitStart">
+<meta property="og:description" content="Проверьте состав коммита, подключите свой репозиторий и отправьте локальную ветку main на GitHub.">
+<meta property="og:type" content="article">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/styles.css">
+<script src="/assets/app.js" defer></script>
+</head>
+<body data-page="/github/upload/">
+<a class="skip-link" href="#main">К основному содержанию</a>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="/" aria-label="GitStart — главная"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M6 7v10m12-10a7 7 0 0 1-7 7H6"/></svg></span><span>GitStart</span></a>
+<div class="header-actions"><button type="button" class="icon-btn requires-js" data-search-open aria-haspopup="dialog" aria-controls="site-search" aria-label="Поиск по сайту"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 4 4"/></svg></button>
+<button type="button" class="icon-btn requires-js" data-theme-toggle aria-label="Тёмная тема" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg></button>
+<button type="button" class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div>
+<nav id="main-nav" class="main-nav" aria-label="Основное меню"><a href="/start/">Старт</a><a href="/basics/">Основы</a><a href="/branches/">Ветки</a><a href="/remotes/">Удалённые репозитории</a><a href="/github/" class="is-current" aria-current="location">GitHub</a><a href="/commands/">Команды</a><a href="/cheatsheet/">Шпаргалка</a><a href="/contacts/">Контакты</a></nav></div></header>
+<dialog class="search-dialog" id="site-search" aria-labelledby="search-heading"><div class="search-box">
+<div class="search-top"><p id="search-heading" class="search-title">Поиск по GitStart</p><button class="icon-btn" type="button" data-search-close aria-label="Закрыть поиск"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+<label for="search-input">Команда или учебная задача</label><div class="search-row"><input id="search-input" type="search" autocomplete="off" placeholder="Например: создать ветку git" aria-describedby="search-status"></div>
+<p id="search-status" class="results-status" role="status"></p><div id="search-results" class="search-results"></div>
+<div class="search-footer"><a href="/sitemap.html">Карта сайта</a><button class="plain-button" type="button" data-search-retry hidden>Повторить загрузку</button></div></div></dialog>
+<main id="main" tabindex="-1"><nav class="container breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span aria-hidden="true">/</span><a href="/github/">GitHub для начинающих</a><span aria-hidden="true">/</span><span aria-current="page">Как загрузить проект на GitHub</span></nav><section class="article-hero"><div class="container narrow"><span class="eyebrow">GitHub для начинающих</span><h1>Как загрузить проект на GitHub</h1><p class="lead">Проверьте состав коммита, подключите свой репозиторий и отправьте локальную ветку main на GitHub.</p></div></section><div class="article-section"><div class="container article-layout"><article class="article-content"><section class="content-card"><h2>Проверьте проект перед отправкой</h2><p>Откройте существующий локальный репозиторий. Убедитесь, что в коммитах нет токенов и паролей, а сборка и локальные настройки исключены там, где это необходимо. Проверьте, куда указывает <code>origin</code>.</p><div class="code-wrap"><div class="code-head"><span>Команды</span><button type="button" class="copy-btn requires-js">Копировать</button></div><pre tabindex="0"><code>git status
+git log -1 --oneline
+git remote -v</code></pre><p class="copy-status" role="status"></p></div></section><section class="content-card"><h2>Отправьте свою ветку</h2><p>Когда в ветке есть коммит, <code>origin</code> указывает на ваш пустой репозиторий и основная ветка называется <code>main</code>, отправьте её:</p><div class="code-wrap"><div class="code-head"><span>Команды</span><button type="button" class="copy-btn requires-js">Копировать</button></div><pre tabindex="0"><code>git push -u origin main</code></pre><p class="copy-status" role="status"></p></div><p>Проверьте список файлов на странице репозитория. Если основная ветка имеет другое имя, подставьте его в команду.</p></section><p class="source-note">Обновлено <time datetime="2026-11-05">5 ноября 2026 г.</time> Официальные источники: <a href="https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github">Публикация локального проекта в GitHub Docs</a>; <a href="https://git-scm.com/docs/git-push">Документация git push</a>.</p></article><aside class="article-aside" aria-label="Связанные материалы"><div class="aside-card"><h2>Дальше</h2><ul><li><a href="/github/clone/" data-next-lesson>Клонирование репозитория с GitHub →</a></li><li><a href="/github/create-repo/">← Как создать репозиторий на GitHub</a></li><li><a href="/github/">К разделу «GitHub для начинающих»</a></li><li><a href="/cheatsheet/">Шпаргалка Git</a></li></ul></div></aside></div></div></main>
+<footer class="site-footer"><div class="container">
+<div class="footer-grid"><div><a class="brand" href="/" aria-label="GitStart — главная"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M6 7v10m12-10a7 7 0 0 1-7 7H6"/></svg></span><span>GitStart</span></a><p>Учебник и справочник по Git и GitHub.</p></div>
+<div><p class="footer-label">Учёба</p><ul><li><a href="/start/">Git для начинающих</a></li><li><a href="/practice/">Практический пример</a></li><li><a href="/commands/">Команды Git</a></li><li><a href="/errors/">Частые ошибки Git</a></li><li><a href="/faq/">FAQ</a></li></ul></div>
+<div><p class="footer-label">Проект</p><ul><li><a href="/about/">О проекте</a></li><li><a href="/contacts/">Контакты</a></li><li><a href="/resources/">Полезные ресурсы</a></li><li><a href="/sitemap.html">Карта сайта</a></li><li><a href="/usage/">Правила и конфиденциальность</a></li></ul></div></div>
+<div class="footer-bottom">© 2026 GitStart</div></div></footer>
+</body>
+</html>

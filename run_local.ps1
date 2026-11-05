@@ -1,7 +1,6 @@
-Set-Location $PSScriptRoot
-Start-Process 'http://localhost:8000/'
+Set-Location -LiteralPath $PSScriptRoot
 if (Get-Command py -ErrorAction SilentlyContinue) {
-  py -m http.server 8000
+    py -3 serve_local.py
 } else {
-  python -m http.server 8000
+    python serve_local.py
 }

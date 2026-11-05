@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="300" viewBox="0 0 520 300" role="img" aria-labelledby="title desc">
+  <title id="title">От рабочей папки к коммиту</title>
+  <desc id="desc">git add сохраняет подготовленный снимок в индексе, git commit записывает этот снимок в историю.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="m0 0 10 5-10 5z" fill="#89ead9"/></marker></defs>
+  <g stroke="#9f9bea" stroke-width="2" fill="#282c49">
+    <rect x="47" y="12" width="286" height="60" rx="12"/>
+    <rect x="47" y="119" width="286" height="60" rx="12"/>
+    <rect x="47" y="226" width="286" height="60" rx="12"/>
+  </g>
+  <g stroke="#89ead9" stroke-width="4" marker-end="url(#arrow)"><path d="M190 76v36"/><path d="M190 183v36"/></g>
+  <g fill="#f3f4ff" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="650">
+    <text x="190" y="50">Рабочая папка</text><text x="190" y="157">Индекс</text><text x="190" y="264">Коммит</text>
+  </g>
+  <g fill="#89ead9" font-family="monospace" font-size="23"><text x="214" y="104">git add</text><text x="214" y="211">git commit</text></g>
+</svg>

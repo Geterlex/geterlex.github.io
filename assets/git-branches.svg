@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="240" viewBox="0 0 560 240" role="img" aria-labelledby="title desc">
+  <title id="title">Учебная ветка и слияние</title>
+  <desc id="desc">Учебная ветка ответвляется от первого коммита. Новый коммит в main соединяет этот коммит и заметку из ветки practice/notes.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="m0 0 10 5-10 5z" fill="#ad9fff"/></marker></defs>
+  <g fill="none" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)">
+    <path d="M92 87H445" stroke="#ad9fff"/>
+    <path d="M94 95Q171 165 254 168" stroke="#86e8d4"/>
+    <path d="M298 165Q391 158 447 100" stroke="#86e8d4"/>
+  </g>
+  <g stroke="#f1efff" stroke-width="3"><circle cx="78" cy="87" r="15" fill="#7c60ec"/><circle cx="278" cy="169" r="15" fill="#318375"/><circle cx="470" cy="87" r="15" fill="#7c60ec"/></g>
+  <g fill="#f3f4ff" text-anchor="middle" font-family="system-ui, sans-serif" font-size="23">
+    <text x="99" y="56">Первый коммит</text><text x="465" y="56">Слияние</text><text x="278" y="216">practice/notes</text><text x="279" y="69">main</text>
+  </g>
+</svg>
