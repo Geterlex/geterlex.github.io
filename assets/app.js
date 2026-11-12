@@ -11,7 +11,7 @@
   // These events stay in the browser. A separate analytics integration can subscribe to them.
   const goal = (name) => document.dispatchEvent(new CustomEvent('gitstart:goal', { detail: { name } }));
   document.addEventListener('click', (event) => {
-    if (event.target.closest('[data-next-lesson]')) goal('next_lesson');
+    if (event.target.closest('.article-aside [data-next-lesson]')) goal('next_lesson');
   });
 
   const themeButton = document.querySelector('[data-theme-toggle]');
@@ -243,4 +243,26 @@
     clear.addEventListener('click', () => { filter.value = ''; update(); filter.focus(); });
     update();
   }
+})();
+
+(() => {
+  'use strict';
+  const id = 114223000;
+  if (location.hostname !== 'geterlex.github.io' || !Number.isSafeInteger(id) || id <= 0) return;
+  const tagUrl = `https://mc.yandex.ru/metrika/tag.js?id=${id}`;
+  if (Array.from(document.scripts).some((script) => script.src === tagUrl)) return;
+  window.ym = window.ym || function () { (window.ym.a = window.ym.a || []).push(arguments); };
+  window.ym.l = window.ym.l || Date.now();
+  const tag = document.createElement('script');
+  tag.async = true;
+  tag.src = tagUrl;
+  document.head.appendChild(tag);
+  window.ym(id, 'init', {
+    ssr: true, referrer: document.referrer, url: location.href,
+    clickmap: false, trackLinks: false, accurateTrackBounce: true, webvisor: false
+  });
+  document.addEventListener('gitstart:goal', ({ detail }) => {
+    const name = detail && detail.name;
+    if (name === 'copy_command' || name === 'next_lesson') window.ym(id, 'reachGoal', name);
+  });
 })();
